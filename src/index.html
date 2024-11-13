@@ -114,7 +114,7 @@
     </section>
 
     <!-- for section   -->
-    <section id="particles-js" class="bg-[#F0F6FF] px-14">
+    <section  class="bg-[#F0F6FF] px-14">
       <div class="bg-[#F0F6FF] mx-auto z-0">
         <div
           class="flex flex-col items-center gap-2 justify-center font-['red_hat_display'] font-bold mb-28"
@@ -297,7 +297,7 @@
     </section>
 
     <!-- Add this div for particles.js -->
-    <!-- <div id="particles-js" class="w-screen h-screen bg-gray-100"></div> -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
 
     <script>
       const menu = document.querySelector(".menu-item");
@@ -315,6 +315,19 @@
         menu.classList.toggle("scale-100");
         closeIcon.classList.toggle("scale-0");
       });
+
+
+      //for particle js
+      const particlesJs = document.getElementById('particles-js');
+particlesJs.style.height = `${document.body.scrollHeight}px`;
+
+// Update on resize in case content height changes
+window.addEventListener('resize', () => {
+    particlesJs.style.height = `${document.body.scrollHeight}px`;
+});
+
+
+
     </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./particle.js"></script>
