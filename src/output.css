@@ -876,6 +876,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -890,6 +895,14 @@ video {
 
 .pb-28{
   padding-bottom: 7rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+.pb-0{
+  padding-bottom: 0px;
 }
 
 .text-center{
@@ -1251,6 +1264,11 @@ body {
     max-width: 37rem;
   }
 
+  .md\:translate-y-5{
+    --tw-translate-y: 1.25rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:scale-100{
     --tw-scale-x: 1;
     --tw-scale-y: 1;
@@ -1296,6 +1314,14 @@ body {
     padding-top: 0px;
   }
 
+  .md\:pb-24{
+    padding-bottom: 6rem;
+  }
+
+  .md\:pb-10{
+    padding-bottom: 2.5rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -1307,8 +1333,17 @@ body {
 }
 
 @media (min-width: 1024px){
+  .lg\:translate-y-5{
+    --tw-translate-y: 1.25rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:pb-24{
+    padding-bottom: 6rem;
   }
 }
 
