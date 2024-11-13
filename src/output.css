@@ -620,6 +620,10 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -640,8 +644,8 @@ video {
   width: 100%;
 }
 
-.w-36{
-  width: 9rem;
+.w-screen{
+  width: 100vw;
 }
 
 .max-w-\[22rem\]{
@@ -658,6 +662,10 @@ video {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize{
+  resize: both;
 }
 
 .flex-col{
@@ -777,6 +785,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .pt-0{
   padding-top: 0px;
 }
@@ -785,12 +797,13 @@ video {
   padding-top: 8rem;
 }
 
-.pb-24{
-  padding-bottom: 6rem;
-}
-
 .text-center{
   text-align: center;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-base{
@@ -808,30 +821,12 @@ video {
   line-height: 1rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.leading-\[4\.5rem\]{
-  line-height: 4.5rem;
-}
-
-.leading-\[4rem\]{
-  line-height: 4rem;
 }
 
 .leading-\[3rem\]{
@@ -862,6 +857,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -870,16 +870,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-400{
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-gray-300{
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -994,6 +984,55 @@ body {
     transition: all 0.9s ease;
 } */
 
+* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  /* Background color */
+  z-index: -1;
+  /* Ensure particles are behind other content */
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+  .count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
 }
@@ -1007,10 +1046,6 @@ body {
     display: block;
   }
 
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:hidden{
     display: none;
   }
@@ -1021,18 +1056,6 @@ body {
 
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:max-w-\[22rem\]{
-    max-width: 22rem;
-  }
-
-  .md\:max-w-\[\]{
-    max-width: ;
-  }
-
-  .md\:max-w-\[30rem\]{
-    max-width: 30rem;
   }
 
   .md\:max-w-\[37rem\]{
@@ -1049,14 +1072,6 @@ body {
     flex-direction: row;
   }
 
-  .md\:flex-col{
-    flex-direction: column;
-  }
-
-  .md\:gap-2{
-    gap: 0.5rem;
-  }
-
   .md\:gap-8{
     gap: 2rem;
   }
@@ -1064,22 +1079,6 @@ body {
   .md\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
-  .md\:bg-\[\]{
-    background-color: ;
-  }
-
-  .md\:bg-\[url\(\'\.\/assets\/bg1-banner-h8\.png\'\)\]{
-    background-image: url('./assets/bg1-banner-h8.png');
-  }
-
-  .md\:bg-\[25\%_180\%\]{
-    background-position: 25% 180%;
-  }
-
-  .md\:bg-\[25\%_110\%\]{
-    background-position: 25% 110%;
   }
 
   .md\:bg-\[25\%_100\%\]{
@@ -1108,22 +1107,9 @@ body {
     text-align: left;
   }
 
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:leading-\[3rem\]{
-    line-height: 3rem;
-  }
-
-  .md\:leading-\[4rem\]{
-    line-height: 4rem;
   }
 }
 
@@ -1159,14 +1145,6 @@ body {
 }
 
 @media (min-width: 1536px){
-  .\32xl\:bg-\[25\%_120\%\]{
-    background-position: 25% 120%;
-  }
-
-  .\32xl\:bg-\[25\%_110\%\]{
-    background-position: 25% 110%;
-  }
-
   .\32xl\:bg-\[25\%_100\%\]{
     background-position: 25% 100%;
   }
