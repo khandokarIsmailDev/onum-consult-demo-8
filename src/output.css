@@ -785,6 +785,10 @@ video {
   padding-top: 8rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1074,6 +1078,14 @@ body {
     background-position: 25% 180%;
   }
 
+  .md\:bg-\[25\%_110\%\]{
+    background-position: 25% 110%;
+  }
+
+  .md\:bg-\[25\%_100\%\]{
+    background-position: 25% 100%;
+  }
+
   .md\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -1149,5 +1161,13 @@ body {
 @media (min-width: 1536px){
   .\32xl\:bg-\[25\%_120\%\]{
     background-position: 25% 120%;
+  }
+
+  .\32xl\:bg-\[25\%_110\%\]{
+    background-position: 25% 110%;
+  }
+
+  .\32xl\:bg-\[25\%_100\%\]{
+    background-position: 25% 100%;
   }
 }
