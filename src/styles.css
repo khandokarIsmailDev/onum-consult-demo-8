@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* src/styles.css */
 @tailwind base;
@@ -9,8 +9,13 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
+.active {
+    color: #FE4C1C !important;
+}
+
 .menu-item a {
     position: relative;
+    color:#1A1C1E;
 }
 
 .menu-item a::after {
@@ -50,4 +55,29 @@ body {
 .button-hover:hover::after {
     width: 100%;
     transform:rotate(5deg)
+}
+
+.hero-section {
+    background-image: url('./assets/bg1-banner-h8.png');
+    /* background-size: cover; */
+    /* background-position: 25% 180%; */
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    background-image: url('./assets/bg2-banner-h8.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.hero-social a {
+    transition: color 0.3s ease;
+}
+
+.hero-social a:hover {
+    color: #FE4C1C;
+}
+.hero-title {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
 }
