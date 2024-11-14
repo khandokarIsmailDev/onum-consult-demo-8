@@ -327,39 +327,62 @@
             <div
               class="flex gap-2 border rounded-3xl overflow-hidden max-w-[18.5rem] p-1 my-7"
             >
-              <button
-                class="same-custom-button button-active relative text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10"
+              <button id="intergration"
+                class=" same-custom-button button-active relative text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10"
               >
                 Intergration
               </button>
               <button
+                id="development"
                 class="same-custom-button relative text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10"
               >
                 Development
               </button>
             </div>
             <!-- for tooltip content  -->
-            <div class="tooltip-content">
+            <div class="tooltip">
               <p class="py-5 text-black/70 leading-8">
                 We help ambitious businesses like yours generate more profits by
                 building awareness, driving web traffic, connecting with
                 customers, and growing overall sales. Give us a call.
               </p>
-              <div class="flex items-start gap-5 pb-5">
-                <img src="./assets/check.png" class="w-6 pt-2" alt="" />
-                <p class="text-gray-500 leading-8">
-                  We provide a revolutionary level of transparency into our
-                  campaigns - from backlink acquisition.
-                </p>
+              <!-- for tooltip content 1 -->
+              <div class="tooltip-intergration scale-100">
+                <div class="flex items-start gap-5 pb-5">
+                  <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                  <p class="text-gray-500 leading-8">
+                    1We provide a revolutionary level of transparency into our
+                    campaigns - from backlink acquisition.
+                  </p>
+                </div>
+                <div class="flex items-start gap-5">
+                  <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                  <p class="text-gray-500 leading-8">
+                    Want to test our process before ramping up the budget? We'll
+                    prove our model and you'll see revenue soar.
+                  </p>
+                </div>
               </div>
-              <div class="flex items-start gap-5">
-                <img src="./assets/check.png" class="w-6 pt-2" alt="" />
-                <p class="text-gray-500 leading-8">
-                  Want to test our process before ramping up the budget? We'll
-                  prove our model and you'll see revenue soar.
-                </p>
+              <!-- for tooltip content 2 -->
+              <div class="tooltip-development scale-0 ">
+                <div class="flex items-start gap-5 pb-5">
+                  <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                  <p class="text-gray-500 leading-8">
+                    2We provide a revolutionary level of transparency into our
+                    campaigns - from backlink acquisition.
+                  </p>
+                </div>
+                <div class="flex items-start gap-5">
+                  <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                  <p class="text-gray-500 leading-8">
+                    Want to test our process before ramping up the budget? We'll
+                    prove our model and you'll see revenue soar.
+                  </p>
+                </div>
               </div>
             </div>
+            
+
           </div>
         </div>
       </div>
@@ -392,6 +415,37 @@
       // Update on resize in case content height changes
       window.addEventListener("resize", () => {
         particlesJs.style.height = `${document.body.scrollHeight}px`;
+      });
+
+
+      // for tooltip
+      const intergration = document.getElementById("intergration");
+      const development = document.getElementById("development");
+      const intergrationContent = document.querySelector(".tooltip-intergration");
+      const developmentContent = document.querySelector(".tooltip-development");
+
+      
+
+      intergration.addEventListener("click", () => {
+        // Toggle button-active class
+        intergration.classList.add("button-active");
+        development.classList.remove("button-active");
+        // Show integration tooltip and hide development tooltip
+        intergrationContent.classList.remove("scale-0", "hidden"); // Show integration tooltip
+        intergrationContent.classList.add("scale-100", "block"); // Ensure it's visible
+        developmentContent.classList.remove("scale-100", "block"); // Hide development tooltip
+        developmentContent.classList.add("scale-0", "hidden"); // Ensure it's hidden
+      });
+
+      development.addEventListener("click", () => {
+        // Toggle button-active class
+        development.classList.add("button-active");
+        intergration.classList.remove("button-active");
+        // Show development tooltip and hide integration tooltip
+        developmentContent.classList.remove("scale-0", "hidden"); // Show development tooltip
+        developmentContent.classList.add("scale-100", "block"); // Ensure it's visible
+        intergrationContent.classList.remove("scale-100", "block"); // Hide integration tooltip
+        intergrationContent.classList.add("scale-0", "hidden"); // Ensure it's hidden
       });
     </script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
