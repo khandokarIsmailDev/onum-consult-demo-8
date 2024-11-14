@@ -904,6 +904,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-\[5rem\]{
+  padding: 5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1033,6 +1037,14 @@ video {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-44{
+  padding-bottom: 11rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-center{
