@@ -638,6 +638,14 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -708,6 +716,10 @@ video {
 
 .w-8{
   width: 2rem;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .max-w-7xl{
@@ -843,6 +855,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\]{
+  background-color: ;
+}
+
+.bg-\[10\]{
+  background-color: 10;
+}
+
 .bg-\[url\(\'\.\/assets\/bg1-h8\.png\'\)\]{
   background-image: url('./assets/bg1-h8.png');
 }
@@ -885,12 +905,28 @@ video {
   --tw-gradient-to: #FE4C1C var(--tw-gradient-to-position);
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-\[228\%_10\%\]{
   background-position: 228% 10%;
 }
 
 .bg-center{
   background-position: center;
+}
+
+.bg-\[100\%_100\%\]{
+  background-position: 100% 100%;
+}
+
+.bg-\[100\%_10\%\]{
+  background-position: 100% 10%;
+}
+
+.bg-\[10\%_10\%\]{
+  background-position: 10% 10%;
 }
 
 .bg-no-repeat{
@@ -1031,6 +1067,11 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -1426,6 +1467,10 @@ body {
     position: static;
   }
 
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1440,6 +1485,10 @@ body {
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:max-w-\[37rem\]{
@@ -1503,6 +1552,11 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1521,8 +1575,16 @@ body {
     margin-top: 0px;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:flex{
     display: flex;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:grid-cols-4{
@@ -1541,6 +1603,10 @@ body {
     background-image: url('./assets/bg1-banner-h8.png');
   }
 
+  .xl\:bg-\[228\%_10\%\]{
+    background-position: 228% 10%;
+  }
+
   .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
@@ -1552,7 +1618,17 @@ body {
 }
 
 @media (min-width: 1536px){
+  @media (min-width: 1280px){
+    .\32xl\:xl\:bg-\[228\%_10\%\]{
+      background-position: 228% 10%;
+    }
+  }
+
   .\32xl\:bg-\[25\%_100\%\]{
     background-position: 25% 100%;
+  }
+
+  .\32xl\:bg-\[228\%_10\%\]{
+    background-position: 228% 10%;
   }
 }
