@@ -143,3 +143,49 @@ body {
     height: 5rem;
     border-radius: 50%;
 }
+
+/* Add this CSS to your styles.css or a <style> tag in your HTML */
+@keyframes slide-mask {
+  0% {
+    background-color: #ffffff;
+    opacity: 0.5;
+    width: 0%;
+    left: 0;
+  }
+  
+  100% {
+    background-color: #ffffff;
+    opacity: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+
+.same-custom-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-active{
+    background-color: #01C3FF;
+    color: #ffffff;
+    box-shadow: 12px 12px 20px 0 rgba(1,96,231,.3);
+    font-weight: 500;
+}
+
+.same-custom-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.same-custom-button:hover::before {
+  animation: slide-mask 0.6s forwards;
+  left: 0;
+}
