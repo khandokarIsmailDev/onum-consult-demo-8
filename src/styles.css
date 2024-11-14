@@ -169,7 +169,7 @@ body {
 .button-active{
     background-color: #01C3FF;
     color: #ffffff;
-    box-shadow: 12px 12px 20px 0 rgba(1,96,231,.3);
+    box-shadow: 8px 8px 18px 0px rgba(0,195,255,0.3);
     font-weight: 500;
 }
 
