@@ -31,7 +31,7 @@
           />
         </div>
         <div
-          class="menu-item flex flex-col md:flex-row absolute md:static top-0 right-0 md:gap-8 gap-5 z-10 bg-gray-100 md:bg-white px-10 md:px-2 text-xl md:text-base w-full md:w-auto h-full pt-32 md:pt-0 text-center md:text-left scale-0 md:scale-100 transition-all duration-300 font-bold "
+          class="menu-item flex flex-col md:flex-row absolute md:static top-0 right-0 md:gap-8 gap-5 z-10 bg-gray-100 md:bg-white px-10 md:px-2 text-xl md:text-base w-full md:w-auto h-full pt-32 md:pt-0 text-center md:text-left scale-0 md:scale-100 transition-all duration-300 font-bold"
         >
           <a class="active" href="#">Home</a>
           <a href="#">About</a>
@@ -40,7 +40,7 @@
         </div>
         <div class="hidden md:block z-10">
           <button
-            class="bg-gradient-to-r from-[#0275E9] to-[#03B1EE] relative button-hover text-white font-bold px-5 py-2 rounded-md rounded-tr-[5rem] rounded-bl-[5rem] shadow-[12px_12px_20px_0_rgba(1,96,231,.3)] "
+            class="bg-gradient-to-r from-[#0275E9] to-[#03B1EE] relative button-hover text-white font-bold px-5 py-2 rounded-md rounded-tr-[5rem] rounded-bl-[5rem] shadow-[12px_12px_20px_0_rgba(1,96,231,.3)]"
           >
             Contact Us
           </button>
@@ -50,7 +50,7 @@
 
     <!-- hero section  -->
     <section
-      class="hero-section pt-0 xl:bg-[url('./assets/bg1-banner-h8.png')] md:bg-[25%_100%] 2xl:bg-[25%_100%] lg:pb-24  md:pb-10 pb-0"
+      class="hero-section pt-0 xl:bg-[url('./assets/bg1-banner-h8.png')] md:bg-[25%_100%] 2xl:bg-[25%_100%] lg:pb-24 md:pb-10 pb-0"
     >
       <div
         class="hero-container flex flex-col md:flex-row justify-between items-center"
@@ -114,7 +114,7 @@
     </section>
 
     <!-- for section   -->
-    <section class="bg-[#F0F6FF] px-14 ">
+    <section class="bg-[#F0F6FF] px-14">
       <div class="bg-[#F0F6FF] mx-auto z-0">
         <div
           class="flex flex-col items-center gap-2 justify-center font-['red_hat_display'] font-bold mb-28"
@@ -297,14 +297,20 @@
     </section>
 
     <!-- about section  -->
-    <section class="bg-[#F0F6FF]  ">
-      <div class="bg-[#F0F6FF] px-14 py-28 bg-[url('./assets/bg1-h8.png')]  bg-center bg-no-repeat bg-[228%_10%]">
-        <div class="max-w-7xl mx-auto flex items-center flex-col md:flex-row gap-52">
+    <section class="bg-[#F0F6FF]">
+      <div
+        class="bg-[#F0F6FF] px-14 py-28 bg-[url('./assets/bg1-h8.png')] bg-no-repeat bg-[228%_10%]"
+      >
+        <div
+          class="max-w-7xl mx-auto flex items-center flex-col md:flex-row gap-52"
+        >
           <div class="md:w-1/2">
-            <img src="./assets/image1-h8.png" alt="about-image">
+            <img src="./assets/image1-h8.png" alt="about-image" />
           </div>
           <div class="md:w-1/2 pl-20">
-            <p class="text-[#AEBFD6] flex items-center gap-2 tracking-widest mb-5">
+            <p
+              class="text-[#AEBFD6] flex items-center gap-2 tracking-widest mb-5"
+            >
               <span
                 class="w-[6px] h-[6px] inline-block rounded-full bg-[#AEBFD6]"
               ></span
@@ -313,26 +319,51 @@
                 class="w-[6px] h-[6px] inline-block rounded-full bg-[#AEBFD6]"
               ></span>
             </p>
-            <h2 class="text-4xl font-extrabold ">
-              Expert in Search Engine <br> Optimization Strategy
+            <h2 class="text-4xl font-extrabold">
+              Expert in Search Engine <br />
+              Optimization Strategy
             </h2>
-            <div class="flex gap-2 border rounded-3xl overflow-hidden max-w-[18.5rem] p-1 my-7">
-              <button class=" same-custom-button button-active  relative  text-[#a5b7d2] font-bold  px-5 py-2 rounded-3xl    z-10">
+            <!-- for tooltip  -->
+            <div
+              class="flex gap-2 border rounded-3xl overflow-hidden max-w-[18.5rem] p-1 my-7"
+            >
+              <button
+                class="same-custom-button button-active relative text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10"
+              >
                 Intergration
               </button>
-              <button class="same-custom-button  relative  text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10">
+              <button
+                class="same-custom-button relative text-[#a5b7d2] font-bold px-5 py-2 rounded-3xl z-10"
+              >
                 Development
               </button>
+            </div>
+            <!-- for tooltip content  -->
+            <div class="tooltip-content">
+              <p class="py-5 text-black/70 leading-8">
+                We help ambitious businesses like yours generate more profits by
+                building awareness, driving web traffic, connecting with
+                customers, and growing overall sales. Give us a call.
+              </p>
+              <div class="flex items-start gap-5 pb-5">
+                <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                <p class="text-gray-500 leading-8">
+                  We provide a revolutionary level of transparency into our
+                  campaigns - from backlink acquisition.
+                </p>
+              </div>
+              <div class="flex items-start gap-5">
+                <img src="./assets/check.png" class="w-6 pt-2" alt="" />
+                <p class="text-gray-500 leading-8">
+                  Want to test our process before ramping up the budget? We'll
+                  prove our model and you'll see revenue soar.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
-
 
     <!-- Add this div for particles.js -->
     <div id="particles-js" class="absolute inset-0 z-0"></div>

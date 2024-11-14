@@ -694,6 +694,14 @@ video {
   width: 100%;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
+.w-8{
+  width: 2rem;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -730,6 +738,10 @@ video {
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -760,6 +772,10 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .overflow-hidden{
@@ -930,6 +946,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -944,6 +965,26 @@ video {
 
 .pt-32{
   padding-top: 8rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -1002,6 +1043,18 @@ video {
 
 .leading-\[3rem\]{
   line-height: 3rem;
+}
+
+.leading-6{
+  line-height: 1.5rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.leading-8{
+  line-height: 2rem;
 }
 
 .tracking-\[5px\]{
@@ -1063,6 +1116,30 @@ video {
 
 .text-\[\]{
   color: ;
+}
+
+.text-black\/10{
+  color: rgb(0 0 0 / 0.1);
+}
+
+.text-black\/90{
+  color: rgb(0 0 0 / 0.9);
+}
+
+.text-black\/80{
+  color: rgb(0 0 0 / 0.8);
+}
+
+.text-black\/50{
+  color: rgb(0 0 0 / 0.5);
+}
+
+.text-black\/60{
+  color: rgb(0 0 0 / 0.6);
+}
+
+.text-black\/70{
+  color: rgb(0 0 0 / 0.7);
 }
 
 .opacity-0{
