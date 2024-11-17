@@ -190,6 +190,8 @@ body {
   left: 0;
 }
 
+
+
 @keyframes card-slide-mask {
   0% {
     background-color: #FF453D;
@@ -221,4 +223,133 @@ body {
 .card-same-button:hover::before {
   animation: card-slide-mask 0.6s forwards;
   left: 0;
+}
+
+
+
+/* progress bar  */
+@keyframes progress {
+  0% { --percentage: 0; }
+  100% { --percentage: var(--value); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes reverseSpin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+[role="progressbar"] {
+  --percentage: var(--value);
+  --secondary: #fff;
+  --size: 150px;
+  --inner-size: calc(var(--size) * 0.85);
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/* Curved animation elements */
+[role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    conic-gradient(
+      from 0deg,
+      transparent 0,
+      #FF811B 0.5turn,
+      #FF403E 1turn
+    ),
+    conic-gradient(
+      from 0deg,
+      #FF811B 0,
+      #FF403E calc(var(--percentage) * 1%),
+      var(--secondary) 0
+    );
+  background-blend-mode: overlay;
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+/* Spinning overlay */
+[role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: #FF403E;
+  background: white;
+  width: var(--inner-size);
+  height: var(--inner-size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Front curved element */
+[role="progressbar"] .front-curve {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: rgba(255, 129, 27, 0.5);
+  border-right-color: rgba(255, 64, 62, 0.5);
+  animation: spin 3s linear infinite;
+}
+
+/* Back curved element */
+[role="progressbar"] .back-curve {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-bottom-color: rgba(255, 129, 27, 0.3);
+  border-left-color: rgba(255, 64, 62, 0.3);
+  animation: reverseSpin 2s linear infinite;
+}
+
+/* Additional decorative elements */
+[role="progressbar"] .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: spin 4s linear infinite;
+}
+
+[role="progressbar"] .dots::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #FF403E;
+  border-radius: 50%;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(255, 64, 62, 0.5);
 }
