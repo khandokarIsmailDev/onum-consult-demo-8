@@ -685,6 +685,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .mb-28{
   margin-bottom: 7rem;
 }
@@ -727,6 +732,10 @@ video {
 
 .mb-4{
   margin-bottom: 1rem;
+}
+
+.-mt-20{
+  margin-top: -5rem;
 }
 
 .block{
@@ -821,6 +830,22 @@ video {
   width: 50%;
 }
 
+.w-20{
+  width: 5rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-44{
+  width: 11rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
@@ -853,6 +878,10 @@ video {
   max-width: 72rem;
 }
 
+.grow{
+  flex-grow: 1;
+}
+
 .scale-0{
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -875,6 +904,14 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -931,6 +968,14 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .overflow-hidden{
@@ -1064,6 +1109,11 @@ video {
   background-color: rgb(255 65 62 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#1A2332\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 35 50 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/assets\/bg-box1-h8-1\.png\'\)\]{
   background-image: url('./assets/bg-box1-h8-1.png');
 }
@@ -1135,6 +1185,12 @@ video {
 .from-\[\#FF413E\]{
   --tw-gradient-from: #FF413E var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 65 62 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#052CAE\]{
+  --tw-gradient-from: #052CAE var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(5 44 174 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1329,6 +1385,11 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -1423,6 +1484,10 @@ video {
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -1608,6 +1673,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#9EE8FF\]{
+  --tw-text-opacity: 1;
+  color: rgb(158 232 255 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -2174,6 +2244,10 @@ body {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row{
