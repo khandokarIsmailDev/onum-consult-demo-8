@@ -108,26 +108,3 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
   });
-
-// Particle count display
-var count_particles, stats, update;
-stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.display = 'none';
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-    stats.begin();
-    stats.end();
-    // Check if the element exists before trying to set its text
-    var countDisplay = document.querySelector('.js-count-particles');
-    if (countDisplay && window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        countDisplay.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
