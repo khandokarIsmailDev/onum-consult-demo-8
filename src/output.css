@@ -690,6 +690,16 @@ video {
   margin-bottom: 5rem;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-28{
   margin-bottom: 7rem;
 }
@@ -1114,6 +1124,10 @@ video {
   background-color: rgb(26 35 50 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#00000080\]{
+  background-color: #00000080;
+}
+
 .bg-\[url\(\'\.\/assets\/bg-box1-h8-1\.png\'\)\]{
   background-image: url('./assets/bg-box1-h8-1.png');
 }
@@ -1144,6 +1158,14 @@ video {
 
 .bg-\[url\(\'\.\/assets\/bg-sub-home5\.png\'\)\]{
   background-image: url('./assets/bg-sub-home5.png');
+}
+
+.bg-\[url\(\'\.\'\)\]{
+  background-image: url('.');
+}
+
+.bg-\[url\(\'\.\/assets\/bg-page-header\.jpg\'\)\]{
+  background-image: url('./assets/bg-page-header.jpg');
 }
 
 .from-\[\#0275E9\]{
@@ -1248,6 +1270,10 @@ video {
 
 .bg-left{
   background-position: left;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-no-repeat{
@@ -1390,6 +1416,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-36{
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.py-28{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -1488,6 +1524,10 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .text-center{

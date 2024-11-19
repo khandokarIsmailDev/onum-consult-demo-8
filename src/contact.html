@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- nav section  -->
+    <nav class="shadow-[8px_8px_30px_0px_rgba(41,99,99,0.15)] py-4">
+        <div class="flex justify-between items-center md:px-20 px-6">
+          <div class="logo">
+            <img src="./assets/logo.png" class="w-56" alt="logo" />
+          </div>
+          <div class="md:hidden relative menu-icon z-10">
+            <img src="./assets/menu.svg" class="w-10" alt="menu" />
+          </div>
+          <div
+            class="md:hidden  absolute top-10 right-10 scale-0 close-icon transition-all z-10"
+          >
+            <img
+              src="./assets/close.svg"
+              class="w-10 text-[#fe4c1c]"
+              alt="close"
+            />
+          </div>
+          <div
+            class="menu-item flex flex-col md:flex-row absolute md:static top-0 right-0 md:gap-8 gap-5 z-10 bg-gray-100 md:bg-white px-10 md:px-2 text-xl md:text-base w-full md:w-auto h-full pt-32 md:pt-0 text-center md:text-left scale-0 md:scale-100 transition-all duration-300 font-bold"
+          >
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="hidden md:block z-10">
+            <button
+              class="bg-gradient-to-r from-[#0275E9] to-[#03B1EE] relative button-hover text-white font-bold px-5 py-2 rounded-md rounded-tr-[5rem] rounded-bl-[5rem] shadow-[12px_12px_20px_0_rgba(1,96,231,.3)]"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </nav>
+
+    <!-- contact section  -->
+     <section class="bg-[url('./assets/bg-page-header.jpg')] bg-cover bg-center bg-no-repeat py-28">
+        <div class="text-center">
+            <h1 class=" text-4xl font-bold pb-2">Contact Us</h1>
+            <p class=" text-sm font-bold"><a href="./index.html" class="text-[#a5b7d2]">Home</a> <i class="fa-solid fa-chevron-right mx-1"></i> Contact Us</p>
+        </div>
+     </section>
+
+</body>
+</html>
