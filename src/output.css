@@ -888,6 +888,10 @@ video {
   max-width: 72rem;
 }
 
+.max-w-4xl{
+  max-width: 56rem;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -1534,8 +1538,28 @@ video {
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .font-\[\'red_hat_display\'\]{
   font-family: 'red hat display';
+}
+
+.font-\[\]{
+  font-family: ;
+}
+
+.font-\[\'re\'\]{
+  font-family: 're';
+}
+
+.font-\[\'red\'\]{
+  font-family: 'red';
+}
+
+.font-\[\'Red_Hat_Display\'\2c sans-serif\]{
+  font-family: 'Red Hat Display',sans-serif;
 }
 
 .text-2xl{
@@ -1718,6 +1742,23 @@ video {
 .text-\[\#9EE8FF\]{
   --tw-text-opacity: 1;
   color: rgb(158 232 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#\]{
+  color: #;
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#5ED7FF\]{
+  --tw-text-opacity: 1;
+  color: rgb(94 215 255 / var(--tw-text-opacity));
+}
+
+.text-\[re\]{
+  color: re;
 }
 
 .opacity-0{
