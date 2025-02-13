@@ -721,10 +721,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
-}
-
 .block{
   display: block;
 }
@@ -1117,6 +1113,10 @@ video {
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
 }
 
 .bg-center{
