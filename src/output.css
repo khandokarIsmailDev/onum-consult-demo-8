@@ -1425,6 +1425,10 @@ video {
   line-height: 3rem;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .tracking-\[5px\]{
   letter-spacing: 5px;
 }
