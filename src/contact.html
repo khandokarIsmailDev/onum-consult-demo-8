@@ -141,11 +141,11 @@
           
           <!-- contact form  -->
           <div class="bg-white p-10 shadow-lg">         
-            <form class="space-y-6 flex flex-col gap-5">
-
+            <form id="contactForm" class="space-y-6 flex flex-col gap-5" onsubmit="return validateForm(event)">
                 <div class="">
                   <input 
                     type="text" 
+                    id="name"
                     placeholder="Your Name *" 
                     class="w-full px-5 py-3 border border-[#e6e6e6] rounded focus:outline-none focus:border-[#0160E7]"
                     required
@@ -280,3 +280,14 @@
     </section>
   </body>
 </html>
+
+
+<!-- Add this script before closing body tag -->
+<script>
+    function validateForm(event) {
+        event.preventDefault();
+        // Demo alert - remove in production
+        alert('Form submitted successfully! In a real implementation, this would be connected to your backend.');
+        return false;
+    }
+</script>
