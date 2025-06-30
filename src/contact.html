@@ -64,7 +64,7 @@
     <!-- contact form section  -->
     <section class="py-28 bg-[#F0F6FF]">
       <div class="max-w-4xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
           <div
             class="bg-gradient-to-r from-[#0275E9] to-[#03B1EE] p-10 rounded-lg"
           >
@@ -138,7 +138,59 @@
             </div>
             </div>
           </div>
-          <div></div>
+          
+          <!-- contact form  -->
+          <div class="bg-white p-10 shadow-lg">
+            
+            
+            <form class="space-y-6 flex flex-col gap-5">
+
+                <div class="">
+                  <input 
+                    type="text" 
+                    placeholder="Your Name *" 
+                    class="w-full px-5 py-3 border border-[#e6e6e6] rounded focus:outline-none focus:border-[#0160E7]"
+                    required
+                  />
+                </div>
+                <div>
+                  <input 
+                    type="email" 
+                    placeholder="Your Email *" 
+                    class="w-full px-5 py-3 border border-[#e6e6e6] rounded focus:outline-none focus:border-[#0160E7]"
+                    required
+                  />
+                </div>
+
+              
+              <div>
+                <input 
+                  type="text" 
+                  placeholder="Subject *" 
+                  class="w-full px-5 py-3 border border-[#e6e6e6] rounded focus:outline-none focus:border-[#0160E7]"
+                  required
+                />
+              </div>
+              
+              <div>
+                <textarea 
+                  placeholder="Your Message *" 
+                  rows="6" 
+                  class="w-full px-5 py-3 border border-[#e6e6e6] rounded focus:outline-none focus:border-[#0160E7]"
+                  required
+                ></textarea>
+              </div>
+              
+              <div>
+                <button 
+                  type="submit"
+                  class="px-5 bg-gradient-to-r from-[#0275E9] to-[#03B1EE] text-white font-bold  py-4 rounded-md rounded-tr-[2rem] rounded-bl-[2rem] hover:shadow-[12px_12px_20px_0_rgba(1,96,231,.3)] transition-all duration-300"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
